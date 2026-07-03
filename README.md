@@ -1,4 +1,4 @@
-# zetteln-tokens
+# zettelnToken
 
 Shared design tokens — the single source of truth for Zetteln's colors, fonts,
 and shadows across the **app** (Expo + NativeWind), the **website**, and the
@@ -18,7 +18,7 @@ and shadows across the **app** (Expo + NativeWind), the **website**, and the
 Each project adds it as a git dependency:
 
 ```bash
-npm install github:lnwlk/zetteln-tokens
+npm install github:lnwlk/zettelnToken
 ```
 
 ## Use
@@ -29,9 +29,9 @@ npm install github:lnwlk/zetteln-tokens
 // tailwind.config.js
 module.exports = {
   // App (native): stack AFTER nativewind so tokens win
-  presets: [require("nativewind/preset"), require("zetteln-tokens/tailwind-preset")],
+  presets: [require("nativewind/preset"), require("zettelnToken/tailwind-preset")],
   // Website / docs:
-  // presets: [require("zetteln-tokens/tailwind-preset")],
+  // presets: [require("zettelnToken/tailwind-preset")],
 };
 ```
 
@@ -40,7 +40,7 @@ Then `bg-zettelnSand`, `text-zettelnRed`, `font-zettelnBold`, etc. work everywhe
 ### Plain CSS (any non-Tailwind consumer)
 
 ```css
-@import "zetteln-tokens/tokens.css";
+@import "zettelnToken/tokens.css";
 .badge { background: var(--zetteln-sand); color: var(--zetteln-dark-blue); }
 ```
 

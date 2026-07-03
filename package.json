@@ -1,0 +1,23 @@
+{
+  "name": "zetteln-tokens",
+  "version": "0.1.0",
+  "description": "Shared design tokens (colors, fonts, shadows) for the Zetteln app, website, and docs.",
+  "license": "UNLICENSED",
+  "private": true,
+  "main": "tokens.js",
+  "exports": {
+    ".": "./tokens.js",
+    "./tailwind-preset": "./tailwind-preset.js",
+    "./tokens.css": "./tokens.css",
+    "./fonts/*": "./fonts/*"
+  },
+  "files": [
+    "tokens.js",
+    "tailwind-preset.js",
+    "tokens.css",
+    "fonts"
+  ],
+  "scripts": {
+    "build:css": "node build-css.js"
+  }
+}

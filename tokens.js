@@ -10,7 +10,7 @@
 // Brand palette — raw colors. Keep in sync with the Notion brand spec.
 // ---------------------------------------------------------------------------
 const colors = {
-  zettelnBackground: "#E2DDD6", // page background (warm gray)
+  zettelnBackground: "#EBEBEB", // page background (neutral light gray)
   zettelnSand: "#f7f1ea", // muted/secondary sand tint (warmer than background)
   zettelnSandDark: "#E0D4C3", // borders / dividers (warm tan)
   zettelnBlue: "#93bcfd", // light blue (sicher_abheften)

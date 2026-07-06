@@ -12,7 +12,7 @@
 const colors = {
   zettelnBackground: "#E2DDD6", // page background (warm gray)
   zettelnSand: "#f7f1ea", // muted/secondary sand tint (warmer than background)
-  zettelnSandDark: "#c9bfa8", // borders / shadows on sand
+  zettelnSandDark: "#E0D4C3", // borders / dividers (warm tan)
   zettelnBlue: "#93bcfd", // light blue (sicher_abheften)
   zettelnGreen: "#93fdbc", // mint green (positive / done)
   zettelnYellow: "#f5bb24", // yellow (aktion_erforderlich)
@@ -120,8 +120,8 @@ const fontFamily = {
 };
 
 const boxShadowColor = {
-  zettelnSandDark: "#c9bfa8",
-  zettelnBlue: "#93bcfd",
+  zettelnSandDark: colors.zettelnSandDark,
+  zettelnBlue: colors.zettelnBlue,
 };
 
 module.exports = {

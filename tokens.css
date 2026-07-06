@@ -3,7 +3,7 @@
   /* --- Brand palette (hex) --- */
   --zetteln-background: #E2DDD6;
   --zetteln-sand: #f7f1ea;
-  --zetteln-sand-dark: #c9bfa8;
+  --zetteln-sand-dark: #E0D4C3;
   --zetteln-blue: #93bcfd;
   --zetteln-green: #93fdbc;
   --zetteln-yellow: #f5bb24;
@@ -19,7 +19,7 @@
   --zetteln-surface-muted: #f7f1ea;
   --zetteln-foreground: #141724;
   --zetteln-muted-foreground: #a1a1a1;
-  --zetteln-border: #c9bfa8;
+  --zetteln-border: #E0D4C3;
   --zetteln-primary: #447DFC;
   --zetteln-primary-foreground: #f7f1ea;
   --zetteln-accent: #93bcfd;
@@ -34,7 +34,7 @@
   --zetteln-hsl-surface-muted: 32 45% 94%;
   --zetteln-hsl-foreground: 229 29% 11%;
   --zetteln-hsl-muted-foreground: 0 0% 63%;
-  --zetteln-hsl-border: 42 23% 72%;
+  --zetteln-hsl-border: 35 32% 82%;
   --zetteln-hsl-primary: 221 97% 63%;
   --zetteln-hsl-primary-foreground: 32 45% 94%;
   --zetteln-hsl-accent: 217 96% 78%;

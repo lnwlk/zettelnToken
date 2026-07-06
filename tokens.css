@@ -1,8 +1,9 @@
 /* AUTO-GENERATED from tokens.js — do not edit by hand. Run: npm run build:css */
 :root {
   /* --- Brand palette (hex) --- */
-  --zetteln-background: #EBEBEB;
-  --zetteln-sand: #f7f1ea;
+  --zetteln-light-sand: #FDF9F5;
+  --zetteln-sand: #F7F1EA;
+  --zetteln-background: #F1EFEC;
   --zetteln-sand-dark: #E0D4C3;
   --zetteln-blue: #93bcfd;
   --zetteln-green: #93fdbc;
@@ -14,22 +15,22 @@
   --zetteln-info-blue: #447DFC;
 
   /* --- Semantic roles (hex) --- */
-  --zetteln-background: #EBEBEB;
+  --zetteln-background: #F1EFEC;
   --zetteln-surface: #ffffff;
-  --zetteln-surface-muted: #f7f1ea;
+  --zetteln-surface-muted: #F7F1EA;
   --zetteln-foreground: #141724;
   --zetteln-muted-foreground: #a1a1a1;
   --zetteln-border: #E0D4C3;
   --zetteln-primary: #447DFC;
-  --zetteln-primary-foreground: #f7f1ea;
+  --zetteln-primary-foreground: #F7F1EA;
   --zetteln-accent: #93bcfd;
   --zetteln-accent-foreground: #141724;
   --zetteln-ring: #93bcfd;
   --zetteln-destructive: #eb563f;
-  --zetteln-destructive-foreground: #f7f1ea;
+  --zetteln-destructive-foreground: #F7F1EA;
 
   /* --- Semantic roles as HSL triplets, for shadcn hsl(var(--x)) theming --- */
-  --zetteln-hsl-background: 0 0% 92%;
+  --zetteln-hsl-background: 36 15% 94%;
   --zetteln-hsl-surface: 0 0% 100%;
   --zetteln-hsl-surface-muted: 32 45% 94%;
   --zetteln-hsl-foreground: 229 29% 11%;
@@ -62,7 +63,7 @@
 
   /* --- Destructive action (solid button + AA text/icon red) --- */
   --zetteln-destructive-solid: #eb563f;
-  --zetteln-destructive-fg: #f7f1ea;
+  --zetteln-destructive-fg: #F7F1EA;
   --zetteln-destructive-text: #b3261e;
 
   /* --- Action-type taxonomy (alias over the status scale) --- */

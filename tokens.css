@@ -1,7 +1,7 @@
 /* AUTO-GENERATED from tokens.js — do not edit by hand. Run: npm run build:css */
 :root {
   /* --- Brand palette (hex) --- */
-  --zetteln-background: #FDF9F5;
+  --zetteln-background: #E2DDD6;
   --zetteln-sand: #f7f1ea;
   --zetteln-sand-dark: #c9bfa8;
   --zetteln-blue: #93bcfd;
@@ -14,7 +14,7 @@
   --zetteln-info-blue: #447DFC;
 
   /* --- Semantic roles (hex) --- */
-  --zetteln-background: #FDF9F5;
+  --zetteln-background: #E2DDD6;
   --zetteln-surface: #ffffff;
   --zetteln-surface-muted: #f7f1ea;
   --zetteln-foreground: #141724;
@@ -29,7 +29,7 @@
   --zetteln-destructive-foreground: #f7f1ea;
 
   /* --- Semantic roles as HSL triplets, for shadcn hsl(var(--x)) theming --- */
-  --zetteln-hsl-background: 30 67% 98%;
+  --zetteln-hsl-background: 35 17% 86%;
   --zetteln-hsl-surface: 0 0% 100%;
   --zetteln-hsl-surface-muted: 32 45% 94%;
   --zetteln-hsl-foreground: 229 29% 11%;

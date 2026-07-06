@@ -2,6 +2,8 @@ const {
   colors,
   semantic,
   statusColors,
+  destructiveColors,
+  actionTypeColors,
   radius,
   shadow,
   fontFamily,
@@ -29,6 +31,8 @@ module.exports = {
         ...colors,
         ...semantic,
         ...statusColors,
+        ...destructiveColors,
+        ...actionTypeColors,
       },
       borderRadius: {
         zetteln: radius,

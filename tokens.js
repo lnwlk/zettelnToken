@@ -62,15 +62,46 @@ const status = {
   neutral: { bg: "#e9e6e2", fg: "#544b40", solid: "#897967" }, // warm gray
 };
 
-// Flattened for Tailwind color utilities: successBg / successFg / successSolid …
-const statusColors = Object.fromEntries(
-  Object.entries(status).flatMap(([name, steps]) =>
-    Object.entries(steps).map(([step, value]) => [
-      `${name}${step[0].toUpperCase()}${step.slice(1)}`,
-      value,
-    ])
-  )
-);
+// ---------------------------------------------------------------------------
+// Destructive action — delete / remove controls. Distinct from the `error`
+// status (which reports a bad state); this is for controls that DO something
+// dangerous. `solid`/`fg` drive solid danger buttons; `text` is a WCAG-AA red
+// for danger text-links and icons on light surfaces (brand red is too light
+// for text). The shadcn --destructive role is driven by semantic.destructive.
+// ---------------------------------------------------------------------------
+const destructive = {
+  solid: colors.zettelnRed, // solid danger button background
+  fg: colors.zettelnSand, // text / icon on the solid button
+  text: "#b3261e", // danger text-links & icons on light surfaces (AA)
+};
+
+// ---------------------------------------------------------------------------
+// Action types — the zetteln document-triage taxonomy. A domain alias layer
+// over the status scale so these badges read semantically (each: bg/fg/solid).
+// ---------------------------------------------------------------------------
+const actionTypes = {
+  unwichtig: status.neutral, // outdated / not important
+  sicherAbheften: status.info, // safe to file (brand: light blue)
+  aktionErforderlich: status.warning, // action required (brand: yellow)
+  notfall: status.error, // emergency (brand: red)
+};
+
+// Flatten a { name: { step: value } } map into camelCase color utilities,
+// e.g. { success: { bg } } -> { successBg }.
+const flattenSteps = (obj) =>
+  Object.fromEntries(
+    Object.entries(obj).flatMap(([name, steps]) =>
+      Object.entries(steps).map(([step, value]) => [
+        `${name}${step[0].toUpperCase()}${step.slice(1)}`,
+        value,
+      ])
+    )
+  );
+
+// Flattened for Tailwind color utilities (successBg, notfallSolid, destructiveText …)
+const statusColors = flattenSteps(status);
+const actionTypeColors = flattenSteps(actionTypes);
+const destructiveColors = flattenSteps({ destructive });
 
 // Shape & elevation — shared so radii and shadows match across surfaces.
 const radius = "0.5rem";
@@ -96,6 +127,10 @@ module.exports = {
   semantic,
   status,
   statusColors,
+  destructive,
+  destructiveColors,
+  actionTypes,
+  actionTypeColors,
   radius,
   shadow,
   fontFamily,

@@ -11,7 +11,8 @@
  */
 const fs = require("fs");
 const path = require("path");
-const { colors, semantic, status, radius } = require("./tokens");
+const { colors, semantic, status, destructive, actionTypes, radius } =
+  require("./tokens");
 
 const toKebab = (name) =>
   name.replace(/([a-z0-9])([A-Z])/g, "$1-$2").toLowerCase();
@@ -60,6 +61,18 @@ const statusVars = Object.entries(status).flatMap(([name, steps]) =>
   )
 );
 
+const destructiveVars = Object.entries(destructive).map(
+  ([step, value]) => `  --zetteln-destructive-${step}: ${value};`
+);
+
+const toKebabName = (n) => n.replace(/([a-z0-9])([A-Z])/g, "$1-$2").toLowerCase();
+const actionTypeVars = Object.entries(actionTypes).flatMap(([name, steps]) =>
+  Object.entries(steps).map(
+    ([step, value]) =>
+      `  --zetteln-action-${toKebabName(name)}-${step}: ${value};`
+  )
+);
+
 const css = `/* AUTO-GENERATED from tokens.js — do not edit by hand. Run: npm run build:css */
 :root {
   /* --- Brand palette (hex) --- */
@@ -73,6 +86,12 @@ ${semanticHsl.join("\n")}
 
   /* --- Status scale (soft bg / fg text / solid accent) --- */
 ${statusVars.join("\n")}
+
+  /* --- Destructive action (solid button + AA text/icon red) --- */
+${destructiveVars.join("\n")}
+
+  /* --- Action-type taxonomy (alias over the status scale) --- */
+${actionTypeVars.join("\n")}
 
   /* --- Shape --- */
   --zetteln-radius: ${radius};

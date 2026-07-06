@@ -60,6 +60,25 @@
   --zetteln-status-neutral-fg: #544b40;
   --zetteln-status-neutral-solid: #897967;
 
+  /* --- Destructive action (solid button + AA text/icon red) --- */
+  --zetteln-destructive-solid: #eb563f;
+  --zetteln-destructive-fg: #f7f1ea;
+  --zetteln-destructive-text: #b3261e;
+
+  /* --- Action-type taxonomy (alias over the status scale) --- */
+  --zetteln-action-unwichtig-bg: #e9e6e2;
+  --zetteln-action-unwichtig-fg: #544b40;
+  --zetteln-action-unwichtig-solid: #897967;
+  --zetteln-action-sicher-abheften-bg: #d7e0f4;
+  --zetteln-action-sicher-abheften-fg: #15357f;
+  --zetteln-action-sicher-abheften-solid: #124fde;
+  --zetteln-action-aktion-erforderlich-bg: #f4ebd7;
+  --zetteln-action-aktion-erforderlich-fg: #7f5f15;
+  --zetteln-action-aktion-erforderlich-solid: #d99d12;
+  --zetteln-action-notfall-bg: #f4dbd7;
+  --zetteln-action-notfall-fg: #7f2515;
+  --zetteln-action-notfall-solid: #d3381d;
+
   /* --- Shape --- */
   --zetteln-radius: 0.5rem;
 }

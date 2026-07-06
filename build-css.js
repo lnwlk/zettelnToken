@@ -11,7 +11,7 @@
  */
 const fs = require("fs");
 const path = require("path");
-const { colors, semantic, radius } = require("./tokens");
+const { colors, semantic, status, radius } = require("./tokens");
 
 const toKebab = (name) =>
   name.replace(/([a-z0-9])([A-Z])/g, "$1-$2").toLowerCase();
@@ -54,6 +54,12 @@ const semanticHsl = Object.entries(semantic).map(
     `  --zetteln-hsl-${toKebab(name)}: ${hexToHslTriplet(value)};`
 );
 
+const statusVars = Object.entries(status).flatMap(([name, steps]) =>
+  Object.entries(steps).map(
+    ([step, value]) => `  --zetteln-status-${name}-${step}: ${value};`
+  )
+);
+
 const css = `/* AUTO-GENERATED from tokens.js — do not edit by hand. Run: npm run build:css */
 :root {
   /* --- Brand palette (hex) --- */
@@ -64,6 +70,9 @@ ${semanticHex.join("\n")}
 
   /* --- Semantic roles as HSL triplets, for shadcn hsl(var(--x)) theming --- */
 ${semanticHsl.join("\n")}
+
+  /* --- Status scale (soft bg / fg text / solid accent) --- */
+${statusVars.join("\n")}
 
   /* --- Shape --- */
   --zetteln-radius: ${radius};

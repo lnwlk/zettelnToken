@@ -20,7 +20,8 @@ and shadows across the **app** (Expo + NativeWind), the **website**, and the
 
 1. **Palette** — raw brand colors (`zettelnSand`, `zettelnRed`, …).
 2. **Semantic roles** — palette mapped to UI intent (`surface`, `foreground`, `border`, `mutedForeground`, `primary`, `accent`, `ring`, `destructive`). This is the layer that keeps a card/border/muted-label looking identical across docs and dashboard.
-3. **Shape/elevation** — `radius`, `shadow`.
+3. **Status scale** — soft, contrast-validated status styling for badges/alerts. Five statuses (`success`, `warning`, `error`, `info`, `neutral`), each with three steps: `bg` (light tint), `fg` (text on the tint, WCAG AA), `solid` (accent for dots/borders/icons). Exposed as Tailwind utilities via `statusColors` (`bg-successBg`, `text-successFg`, `bg-warningSolid`, …) and as `--zetteln-status-<name>-<step>` CSS vars.
+4. **Shape/elevation** — `radius`, `shadow`.
 
 `tokens.css` emits each semantic role three ways: `--zetteln-surface` (hex) and
 `--zetteln-hsl-surface` (a `H S% L%` triplet for shadcn-style `hsl(var(--x))`

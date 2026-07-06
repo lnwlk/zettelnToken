@@ -27,10 +27,6 @@
   --zetteln-ring: #93bcfd;
   --zetteln-destructive: #eb563f;
   --zetteln-destructive-foreground: #f7f1ea;
-  --zetteln-success: #93fdbc;
-  --zetteln-success-foreground: #141724;
-  --zetteln-warning: #f5bb24;
-  --zetteln-warning-foreground: #141724;
 
   /* --- Semantic roles as HSL triplets, for shadcn hsl(var(--x)) theming --- */
   --zetteln-hsl-background: 28 29% 91%;
@@ -46,10 +42,23 @@
   --zetteln-hsl-ring: 217 96% 78%;
   --zetteln-hsl-destructive: 8 81% 58%;
   --zetteln-hsl-destructive-foreground: 32 45% 94%;
-  --zetteln-hsl-success: 143 96% 78%;
-  --zetteln-hsl-success-foreground: 229 29% 11%;
-  --zetteln-hsl-warning: 43 91% 55%;
-  --zetteln-hsl-warning-foreground: 229 29% 11%;
+
+  /* --- Status scale (soft bg / fg text / solid accent) --- */
+  --zetteln-status-success-bg: #d8f3e6;
+  --zetteln-status-success-fg: #23704a;
+  --zetteln-status-success-solid: #3ab678;
+  --zetteln-status-warning-bg: #f4ebd7;
+  --zetteln-status-warning-fg: #7f5f15;
+  --zetteln-status-warning-solid: #d99d12;
+  --zetteln-status-error-bg: #f4dbd7;
+  --zetteln-status-error-fg: #7f2515;
+  --zetteln-status-error-solid: #d3381d;
+  --zetteln-status-info-bg: #d7e0f4;
+  --zetteln-status-info-fg: #15357f;
+  --zetteln-status-info-solid: #124fde;
+  --zetteln-status-neutral-bg: #e9e6e2;
+  --zetteln-status-neutral-fg: #544b40;
+  --zetteln-status-neutral-solid: #897967;
 
   /* --- Shape --- */
   --zetteln-radius: 0.5rem;

@@ -1,5 +1,12 @@
-const { colors, semantic, radius, shadow, fontFamily, boxShadowColor } =
-  require("./tokens");
+const {
+  colors,
+  semantic,
+  statusColors,
+  radius,
+  shadow,
+  fontFamily,
+  boxShadowColor,
+} = require("./tokens");
 
 /**
  * Shared Tailwind preset. Consume it in each project's tailwind.config.js:
@@ -21,6 +28,7 @@ module.exports = {
       colors: {
         ...colors,
         ...semantic,
+        ...statusColors,
       },
       borderRadius: {
         zetteln: radius,

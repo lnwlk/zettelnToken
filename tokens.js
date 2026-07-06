@@ -10,8 +10,8 @@
 // Brand palette — raw colors. Keep in sync with the Notion brand spec.
 // ---------------------------------------------------------------------------
 const colors = {
-  zettelnBackground: "#efe8e2", // page sand / gray
-  zettelnSand: "#f7f1ea", // card/badge sand (warmer than background)
+  zettelnBackground: "#FDF9F5", // page background (warm off-white)
+  zettelnSand: "#f7f1ea", // muted/secondary sand tint (warmer than background)
   zettelnSandDark: "#c9bfa8", // borders / shadows on sand
   zettelnBlue: "#93bcfd", // light blue (sicher_abheften)
   zettelnGreen: "#93fdbc", // mint green (positive / done)
@@ -20,7 +20,7 @@ const colors = {
   zettelnRedLight: "#f9ccc5", // red 30% tint (overdue deadline field)
   zettelnDarkBlue: "#141724", // ink / black-blue
   zettelnGray: "#a1a1a1", // grey (outdated / no longer valid)
-  zettelnInfoBlue: "#2c68f6", // stronger blue (appeal deadline text)
+  zettelnInfoBlue: "#447DFC", // primary blue (buttons, active, links)
 };
 
 // ---------------------------------------------------------------------------
@@ -30,9 +30,9 @@ const colors = {
 // component itself. This is the layer that keeps the "doc look" consistent.
 // ---------------------------------------------------------------------------
 const semantic = {
-  background: colors.zettelnBackground, // page background
-  surface: colors.zettelnSand, // cards, popovers, inputs
-  surfaceMuted: colors.zettelnBackground, // subtle fills on a surface
+  background: colors.zettelnBackground, // page background (warm off-white)
+  surface: "#ffffff", // raised surfaces: cards, popovers, inputs (white)
+  surfaceMuted: colors.zettelnSand, // subtle fills: muted zones, secondary buttons
   foreground: colors.zettelnDarkBlue, // primary text / ink
   mutedForeground: colors.zettelnGray, // secondary / muted text
   border: colors.zettelnSandDark, // borders & dividers
@@ -110,6 +110,8 @@ const shadow = {
   sm: "0 1px 2px 0 rgba(20, 23, 36, 0.04)",
   DEFAULT:
     "0 1px 3px 0 rgba(20, 23, 36, 0.06), 0 1px 2px -1px rgba(20, 23, 36, 0.06)",
+  // Soft, diffuse card elevation — replaces borders on white cards.
+  card: "0 1px 3px 0 rgba(20, 23, 36, 0.04), 0 6px 16px -4px rgba(20, 23, 36, 0.08)",
 };
 
 const fontFamily = {

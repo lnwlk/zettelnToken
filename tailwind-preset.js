@@ -40,6 +40,7 @@ module.exports = {
       boxShadow: {
         zetteln: shadow.DEFAULT,
         "zetteln-sm": shadow.sm,
+        "zetteln-card": shadow.card,
       },
       fontFamily,
       boxShadowColor,

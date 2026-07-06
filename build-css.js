@@ -11,7 +11,7 @@
  */
 const fs = require("fs");
 const path = require("path");
-const { colors, semantic, status, destructive, actionTypes, radius } =
+const { colors, semantic, status, destructive, actionTypes, radius, shadow } =
   require("./tokens");
 
 const toKebab = (name) =>
@@ -93,8 +93,11 @@ ${destructiveVars.join("\n")}
   /* --- Action-type taxonomy (alias over the status scale) --- */
 ${actionTypeVars.join("\n")}
 
-  /* --- Shape --- */
+  /* --- Shape & elevation --- */
   --zetteln-radius: ${radius};
+  --zetteln-shadow-sm: ${shadow.sm};
+  --zetteln-shadow: ${shadow.DEFAULT};
+  --zetteln-shadow-card: ${shadow.card};
 }
 `;
 

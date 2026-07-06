@@ -1,7 +1,7 @@
 /* AUTO-GENERATED from tokens.js — do not edit by hand. Run: npm run build:css */
 :root {
   /* --- Brand palette (hex) --- */
-  --zetteln-background: #efe8e2;
+  --zetteln-background: #FDF9F5;
   --zetteln-sand: #f7f1ea;
   --zetteln-sand-dark: #c9bfa8;
   --zetteln-blue: #93bcfd;
@@ -11,16 +11,16 @@
   --zetteln-red-light: #f9ccc5;
   --zetteln-dark-blue: #141724;
   --zetteln-gray: #a1a1a1;
-  --zetteln-info-blue: #2c68f6;
+  --zetteln-info-blue: #447DFC;
 
   /* --- Semantic roles (hex) --- */
-  --zetteln-background: #efe8e2;
-  --zetteln-surface: #f7f1ea;
-  --zetteln-surface-muted: #efe8e2;
+  --zetteln-background: #FDF9F5;
+  --zetteln-surface: #ffffff;
+  --zetteln-surface-muted: #f7f1ea;
   --zetteln-foreground: #141724;
   --zetteln-muted-foreground: #a1a1a1;
   --zetteln-border: #c9bfa8;
-  --zetteln-primary: #2c68f6;
+  --zetteln-primary: #447DFC;
   --zetteln-primary-foreground: #f7f1ea;
   --zetteln-accent: #93bcfd;
   --zetteln-accent-foreground: #141724;
@@ -29,13 +29,13 @@
   --zetteln-destructive-foreground: #f7f1ea;
 
   /* --- Semantic roles as HSL triplets, for shadcn hsl(var(--x)) theming --- */
-  --zetteln-hsl-background: 28 29% 91%;
-  --zetteln-hsl-surface: 32 45% 94%;
-  --zetteln-hsl-surface-muted: 28 29% 91%;
+  --zetteln-hsl-background: 30 67% 98%;
+  --zetteln-hsl-surface: 0 0% 100%;
+  --zetteln-hsl-surface-muted: 32 45% 94%;
   --zetteln-hsl-foreground: 229 29% 11%;
   --zetteln-hsl-muted-foreground: 0 0% 63%;
   --zetteln-hsl-border: 42 23% 72%;
-  --zetteln-hsl-primary: 222 92% 57%;
+  --zetteln-hsl-primary: 221 97% 63%;
   --zetteln-hsl-primary-foreground: 32 45% 94%;
   --zetteln-hsl-accent: 217 96% 78%;
   --zetteln-hsl-accent-foreground: 229 29% 11%;
@@ -79,6 +79,9 @@
   --zetteln-action-notfall-fg: #7f2515;
   --zetteln-action-notfall-solid: #d3381d;
 
-  /* --- Shape --- */
+  /* --- Shape & elevation --- */
   --zetteln-radius: 0.5rem;
+  --zetteln-shadow-sm: 0 1px 2px 0 rgba(20, 23, 36, 0.04);
+  --zetteln-shadow: 0 1px 3px 0 rgba(20, 23, 36, 0.06), 0 1px 2px -1px rgba(20, 23, 36, 0.06);
+  --zetteln-shadow-card: 0 1px 3px 0 rgba(20, 23, 36, 0.04), 0 6px 16px -4px rgba(20, 23, 36, 0.08);
 }

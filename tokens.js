@@ -14,6 +14,7 @@ const colors = {
   zettelnSand: "#f7f1ea", // card/badge sand (warmer than background)
   zettelnSandDark: "#c9bfa8", // borders / shadows on sand
   zettelnBlue: "#93bcfd", // light blue (sicher_abheften)
+  zettelnGreen: "#93fdbc", // mint green (positive / done)
   zettelnYellow: "#f5bb24", // yellow (aktion_erforderlich)
   zettelnRed: "#eb563f", // red (notfall)
   zettelnRedLight: "#f9ccc5", // red 30% tint (overdue deadline field)
@@ -42,6 +43,10 @@ const semantic = {
   ring: colors.zettelnBlue, // focus ring
   destructive: colors.zettelnRed, // danger actions
   destructiveForeground: colors.zettelnSand, // text on destructive
+  success: colors.zettelnGreen, // positive / done status
+  successForeground: colors.zettelnDarkBlue, // text on success
+  warning: colors.zettelnYellow, // caution / action-needed status
+  warningForeground: colors.zettelnDarkBlue, // text on warning
 };
 
 // Shape & elevation — shared so radii and shadows match across surfaces.

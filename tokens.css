@@ -5,6 +5,7 @@
   --zetteln-sand: #f7f1ea;
   --zetteln-sand-dark: #c9bfa8;
   --zetteln-blue: #93bcfd;
+  --zetteln-green: #93fdbc;
   --zetteln-yellow: #f5bb24;
   --zetteln-red: #eb563f;
   --zetteln-red-light: #f9ccc5;
@@ -26,6 +27,10 @@
   --zetteln-ring: #93bcfd;
   --zetteln-destructive: #eb563f;
   --zetteln-destructive-foreground: #f7f1ea;
+  --zetteln-success: #93fdbc;
+  --zetteln-success-foreground: #141724;
+  --zetteln-warning: #f5bb24;
+  --zetteln-warning-foreground: #141724;
 
   /* --- Semantic roles as HSL triplets, for shadcn hsl(var(--x)) theming --- */
   --zetteln-hsl-background: 28 29% 91%;
@@ -41,6 +46,10 @@
   --zetteln-hsl-ring: 217 96% 78%;
   --zetteln-hsl-destructive: 8 81% 58%;
   --zetteln-hsl-destructive-foreground: 32 45% 94%;
+  --zetteln-hsl-success: 143 96% 78%;
+  --zetteln-hsl-success-foreground: 229 29% 11%;
+  --zetteln-hsl-warning: 43 91% 55%;
+  --zetteln-hsl-warning-foreground: 229 29% 11%;
 
   /* --- Shape --- */
   --zetteln-radius: 0.5rem;

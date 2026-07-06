@@ -111,8 +111,8 @@ const shadow = {
   sm: "0 1px 2px 0 rgba(20, 23, 36, 0.04)",
   DEFAULT:
     "0 1px 3px 0 rgba(20, 23, 36, 0.06), 0 1px 2px -1px rgba(20, 23, 36, 0.06)",
-  // Soft, diffuse card elevation — replaces borders on white cards.
-  card: "0 1px 3px 0 rgba(20, 23, 36, 0.04), 0 6px 16px -4px rgba(20, 23, 36, 0.08)",
+  // Soft but present card elevation (dark ink) — replaces borders on white cards.
+  card: "0 1px 3px 0 rgba(20, 23, 36, 0.12), 0 8px 24px -6px rgba(20, 23, 36, 0.20)",
 };
 
 const fontFamily = {

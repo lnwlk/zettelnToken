@@ -6,7 +6,9 @@
  * this file, so a change here propagates to the app, website, and docs.
  */
 
-// Brand palette — keep in sync with the Notion brand spec.
+// ---------------------------------------------------------------------------
+// Brand palette — raw colors. Keep in sync with the Notion brand spec.
+// ---------------------------------------------------------------------------
 const colors = {
   zettelnBackground: "#efe8e2", // page sand / gray
   zettelnSand: "#f7f1ea", // card/badge sand (warmer than background)
@@ -20,6 +22,37 @@ const colors = {
   zettelnInfoBlue: "#2c68f6", // stronger blue (appeal deadline text)
 };
 
+// ---------------------------------------------------------------------------
+// Semantic roles — map the palette to UI intent. Web surfaces (dashboard's
+// shadcn variables, docs' fumadocs variables) consume these so a card, border,
+// or muted label looks identical everywhere even though each app implements the
+// component itself. This is the layer that keeps the "doc look" consistent.
+// ---------------------------------------------------------------------------
+const semantic = {
+  background: colors.zettelnBackground, // page background
+  surface: colors.zettelnSand, // cards, popovers, inputs
+  surfaceMuted: colors.zettelnBackground, // subtle fills on a surface
+  foreground: colors.zettelnDarkBlue, // primary text / ink
+  mutedForeground: colors.zettelnGray, // secondary / muted text
+  border: colors.zettelnSandDark, // borders & dividers
+  primary: colors.zettelnInfoBlue, // active / accent
+  primaryForeground: colors.zettelnSand, // text/icon on primary
+  accent: colors.zettelnBlue, // hover fills (nav, menu items)
+  accentForeground: colors.zettelnDarkBlue, // text on accent
+  ring: colors.zettelnBlue, // focus ring
+  destructive: colors.zettelnRed, // danger actions
+  destructiveForeground: colors.zettelnSand, // text on destructive
+};
+
+// Shape & elevation — shared so radii and shadows match across surfaces.
+const radius = "0.5rem";
+
+const shadow = {
+  sm: "0 1px 2px 0 rgba(20, 23, 36, 0.04)",
+  DEFAULT:
+    "0 1px 3px 0 rgba(20, 23, 36, 0.06), 0 1px 2px -1px rgba(20, 23, 36, 0.06)",
+};
+
 const fontFamily = {
   sans: ["zettelnFont"],
   zettelnBold: ["zettelnFont-Bold"],
@@ -30,4 +63,11 @@ const boxShadowColor = {
   zettelnBlue: "#93bcfd",
 };
 
-module.exports = { colors, fontFamily, boxShadowColor };
+module.exports = {
+  colors,
+  semantic,
+  radius,
+  shadow,
+  fontFamily,
+  boxShadowColor,
+};

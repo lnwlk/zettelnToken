@@ -9,13 +9,15 @@
     ".": "./tokens.js",
     "./tailwind-preset": "./tailwind-preset.js",
     "./tokens.css": "./tokens.css",
-    "./fonts/*": "./fonts/*"
+    "./fonts/*": "./fonts/*",
+    "./assets/*": "./assets/*"
   },
   "files": [
     "tokens.js",
     "tailwind-preset.js",
     "tokens.css",
-    "fonts"
+    "fonts",
+    "assets"
   ],
   "scripts": {
     "build:css": "node build-css.js"

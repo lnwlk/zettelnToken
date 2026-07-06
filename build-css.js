@@ -95,9 +95,9 @@ ${actionTypeVars.join("\n")}
 
   /* --- Shape & elevation --- */
   --zetteln-radius: ${radius};
-  --zetteln-shadow-sm: ${shadow.sm};
-  --zetteln-shadow: ${shadow.DEFAULT};
-  --zetteln-shadow-card: ${shadow.card};
+${Object.entries(shadow)
+  .map(([level, value]) => `  --zetteln-shadow-${level}: ${value};`)
+  .join("\n")}
 }
 `;
 

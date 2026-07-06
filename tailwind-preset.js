@@ -38,9 +38,10 @@ module.exports = {
         zetteln: radius,
       },
       boxShadow: {
-        zetteln: shadow.DEFAULT,
         "zetteln-sm": shadow.sm,
         "zetteln-card": shadow.card,
+        "zetteln-popover": shadow.popover,
+        "zetteln-dialog": shadow.dialog,
       },
       fontFamily,
       boxShadowColor,

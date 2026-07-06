@@ -107,12 +107,15 @@ const destructiveColors = flattenSteps({ destructive });
 // Shape & elevation — shared so radii and shadows match across surfaces.
 const radius = "0.5rem";
 
+// Elevation scale — one warm-ink shadow per surface level, increasing depth so
+// stacking reads correctly (a dropdown floats above a card, a modal above all).
 const shadow = {
-  sm: "0 1px 2px 0 rgba(20, 23, 36, 0.04)",
-  DEFAULT:
-    "0 1px 3px 0 rgba(20, 23, 36, 0.06), 0 1px 2px -1px rgba(20, 23, 36, 0.06)",
-  // Soft but present card elevation (dark ink) — replaces borders on white cards.
-  card: "0 1px 3px 0 rgba(20, 23, 36, 0.12), 0 8px 24px -6px rgba(20, 23, 36, 0.20)",
+  sm: "0 1px 2px 0 rgba(20, 23, 36, 0.06)", // resting: inputs, buttons
+  card: "0 1px 3px 0 rgba(20, 23, 36, 0.12), 0 8px 24px -6px rgba(20, 23, 36, 0.20)", // raised cards
+  popover:
+    "0 4px 10px -2px rgba(20, 23, 36, 0.14), 0 12px 32px -8px rgba(20, 23, 36, 0.24)", // dropdowns, menus, selects
+  dialog:
+    "0 8px 20px -4px rgba(20, 23, 36, 0.16), 0 32px 64px -16px rgba(20, 23, 36, 0.32)", // modals
 };
 
 const fontFamily = {
